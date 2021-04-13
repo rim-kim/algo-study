@@ -28,13 +28,13 @@ git branch <브랜치 이름>
 <br>
   
 ### Workflow
-1. <code> git checkout <브랜치 이름> </code> (main에서 개인 브랜치로 전환)
-2. 로컬 workspace에서 작업 후 <code>git add ...</code> 및 <code>git commit ...</code>
+1. **<code> git checkout <브랜치 이름> </code>** (main에서 개인 브랜치로 전환)
+2. 로컬 workspace에서 작업 후 **<code>git add ...</code>** 및 **<code>git commit ...</code>**
 3. <code>git push origin <브랜치 이름></code> (원격저장소의 개인 브랜치에 작업 반영)
 4. <code>git checkout main</code> (개인 브랜치에서 main으로 전환)
 5. <code>git pull</code> (원격저장소의 main을 로컬에 적용)
 6. <code>git merge <브랜치 이름></code> (main에 개인 브랜치 작업 반영)
-7. <code>git push origin main</code>
+7. <code>git push origin main</code> (원격저장소의 main에 작업 반영)
 <br><br>
 
 ## 코테 사이트 및 참고 사이트
