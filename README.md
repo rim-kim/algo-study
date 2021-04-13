@@ -9,25 +9,21 @@
 
 ## Git Repository 사용법
 저장소: https://github.com/DEInformatik/algo-study
-
 ### 저장소 설명
 - source : 팀원 각각의 알고리즘 공부 개인 폴더
 - content : 알고리즘 개념과 이론을 정리해 업로드 하는 공용 폴더
 - 추후 추가 예정
 <br>
-
 ### 원격저장소 로컬에 가져오기
 <code>
 git clone https://github.com/DEInformatik/algo-study.git
 </code>
 <br>
-
 ### 저장소 개인 브랜치 생성하기
 <code>
 git branch <브랜치 이름>
 </code>
 <br>
-
 ### Workflow
 1. <code> git checkout <브랜치 이름> </code> (main에서 개인 브랜치로 전환)
 2. 로컬 workspace에서 작업 후 <code>git add ...</code> 및 <code>git commit ...</code>
