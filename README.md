@@ -14,19 +14,19 @@
 - source : 팀원 각각의 알고리즘 공부 개인 폴더
 - content : 알고리즘 개념과 이론을 정리해 업로드 하는 공용 폴더
 - 추후 추가 예정
-<br><br>
+<br>
 
 ### 원격저장소 로컬에 가져오기
 <code>
 git clone https://github.com/DEInformatik/algo-study.git
 </code>
-<br><br>
+<br>
 
 ### 저장소 개인 브랜치 생성하기
 <code>
 git branch <브랜치 이름>
 </code>
-<br><br>
+<br>
 
 ### Workflow
 1. <code> git checkout <브랜치 이름> </code> (main에서 개인 브랜치로 전환)
