@@ -1,0 +1,21 @@
+= Zeiterfassung für die Lerngruppe
+
+Notieren Sie die Zeit in Minuten für jeden Entwickler pro Woche (Wochengranularität).
+
+// See http://asciidoctor.org/docs/user-manual/#tables
+[option="headers"]
+|===
+|Woche      |Yeonie   |---  |--- |---
+|1          |60      |--    |--    |--
+|2          |--      |--    |--    |--
+|3          |--      |--    |--    |--
+|4          |--      |--    |--    |--
+|5          |--      |--    |--    |--
+|6          |--      |--    |--    |--
+|7          |--      |--    |--    |--
+|8          |--      |--    |--    |--
+|9          |--      |--    |--    |--
+|10          |--      |--    |--    |--
+|11          |--      |--    |--    |--
+|12          |--      |--    |--    |--
+|===
