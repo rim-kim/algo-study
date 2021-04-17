@@ -6,7 +6,7 @@ Notieren Sie die Zeit in Minuten für jeden Entwickler pro Woche (Wochengranular
 [option="headers"]
 |===
 |Woche      |Yeonie   |---  |--- |---
-|1          |120      |--    |--    |--
+|1          |300      |--    |--    |--
 |2          |--      |--    |--    |--
 |3          |--      |--    |--    |--
 |4          |--      |--    |--    |--
