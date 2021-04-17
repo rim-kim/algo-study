@@ -12,16 +12,73 @@
 
 """
 
-# 연습문제 1. 실습 3-3의 seqSearchSen 메서드를 for 문을 사용하여 프로그램을 작성하시오. (115p)
+# 이진 검색 알고리즘 / 생각하지 않고 쭉쭉 쓸 수 있을 정도로 익숙해 질 것.
 
 from typing import Any, Sequence
 
+
+def bin_search(a: Sequence, key: Any) -> int:
+    """ 시퀀스 a 에서 key 와 일치하는 원소를 이진 검색"""
+    pl = 0  # 검색 범위 맨 앞 원소의 인덱스
+    pr = len(a) - 1  # 검색 범위 맨 끝 원소의 인덱스
+
+    while True:
+        pc = (pl + pr) // 2
+        if a[pc] == key:
+            return pc
+        elif a[pc] < key:
+            pl = pc + 1
+        else:
+            pr = pc - 1
+        if pl > pr:
+            break
+
+    return -1
+
+
+# 연습문제 1. 실습 3-3의 seqSearchSen 메서드를 for 문을 사용하여 프로그램을 작성하시오. - 선형검색
 
 def seq_search(a: Sequence, key: Any) -> int:
     for i in range(len(a)):
         if a[i] == key:
             return i
         i += 1
+    return -1
+
+
+# 연습문제 3. 요솟수가 n인 배열 a에서 key와 일치하는 모든 요소의 인덱스를 배열 idx의 맨 앞부터 순서대로 저장하고, 일치한 요솟수를 반환하는 메서드를 작성하세요.
+# 예를 들어 요솟수가 8인 배열 a의 요소가 {1, 9, 2, 9, 4, 6, 7, 9}이고 key가 9면 배열 idx에 {1, 3, 7}을 저장하고 3을 반환합니다. (117p)
+
+def seq_search_2(a: Sequence, key: Any) -> int:
+    search = []
+
+    for i in range(len(a)):
+        if a[i] == key:
+            search.append(i)
+        i += 1
+
+    return len(search)
+
+
+# 연습문제 5. 아래 그림의 배열에서 7을 검색하면 중앙에 위치하는 a[5]를 검색합니다. 맨 앞의 요소를 찾는 binSearchX 메서드를 작성해 보세요. (117p)
+
+def bin_search_x(a:Sequence, key:Any) -> int:
+    pl = 0
+    pr = len(a) - 1
+
+    while True:
+        pc = (pl + pr) // 2
+        if a[pc] == key:
+            while a[pc - 1] == key:
+                pc -= 1
+            return pc
+        elif a[pc] < key:
+            pl = pc + 1
+        else:
+            pr = pc - 1
+        if pl > pr:
+            break
+
     return -1
 
 
@@ -33,26 +90,10 @@ if __name__ == '__main__':
         x[i] = int(input(f'x[{i}]: '))
 
     key = int(input('검색할 값을 입력하세요 : '))
-    idx = seq_search(x, key)
+
+    idx = bin_search_x(x, key)
     if idx == -1:
         print('검색값을 갖는 원소가 존재하지 않습니다')
     else:
-        print(f'검색값은 x[{idx}]에 있습니다.')
+        print(f'검색값이 x[{idx}]에  있습니다.')
 
-
-# 연습문제 2. 오른쪽처럼 선형 검색의 스캐닝 과정을 상세하게 출력 하는 프로그램을 작성하세요.
-# 이때 각 행의 맨 왼쪽에 현재 검 색하는 요소의 인덱스를 출력하고, 현재 검색하고 있는 요소 위에 별표 기호 *를 출력하세요. (115p)
-
-#129p 보면서 여기서부터 하기~
-
-# 연습문제 3. 요솟수가 n인 배열 a에서 key와 일치하는 모든 요소의 인덱스를 배열 idx의 맨 앞부터 순서대로 저장하고, 일치한 요솟수를 반환하는 메서드를 작성하세요.
-# 예를 들어 요솟수가 8인 배열 a의 요소가 {1, 9, 2, 9, 4, 6, 7, 9}이고 key가 9면 배열 idx에 {1, 3, 7}을 저장하고 3을 반환합니다. (117p)
-
-# 연습문제 4. 각 행의 맨 왼쪽에 현재 검색하고 있는 요소의 인덱스를 출력하고, 검색 범위의 맨 앞 요소 위에 <-, 맨 끝 요소 위에 ->,
-# 현재 검색하고 있는 중앙 요소 위에 +를 출력 하도록 하세요. (117p)
-
-# 연습문제 5. 아래 그림의 배열에서 7을 검색하면 중앙에 위치하는 a[5]를 검색합니다. 맨 앞의 요소를 찾는 binSearchX 메서드를 작성해 보세요. (117p)
-
-# 연습문제 6. 실습 3-5를 수정하여 검색에 실패하면 삽입 포인트의 값을 출력하는 프로그램을 작성하세요. (121p)
-
-# 연습문제 7.시력에 대한 내림차순 정렬의 신체검사 데이터에서 특정 시력을 가진 사람을 검색하는 프로그램을 작성하세요. (129p)
