@@ -5,8 +5,8 @@ Notieren Sie die Zeit in Minuten für jeden Entwickler pro Woche (Wochengranular
 // See http://asciidoctor.org/docs/user-manual/#tables
 [option="headers"]
 |===
-|Woche      |Yeonie   |---  |--- |---
-|1          |300      |--    |--    |--
+|Woche      |Yeonie   |Seul  |--- |---
+|1          |300      |360    |--    |--
 |2          |--      |--    |--    |--
 |3          |--      |--    |--    |--
 |4          |--      |--    |--    |--
