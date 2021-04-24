@@ -7,7 +7,7 @@ Notieren Sie die Zeit in Minuten für jeden Entwickler pro Woche (Wochengranular
 |===
 |Woche      |Yeonie   |Seul  |--- |---
 |1          |300      |360    |--    |--
-|2          |120      |--    |--    |--
+|2          |120      |180    |--    |--
 |3          |--      |--    |--    |--
 |4          |--      |--    |--    |--
 |5          |--      |--    |--    |--
