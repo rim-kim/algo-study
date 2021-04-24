@@ -1,4 +1,4 @@
-package chap03;
+package chap03_Search;
 import java.util.Scanner;
 
 //배열 a의 앞쪽 n개의 요소에서 key와 같은 요소를 선형검색

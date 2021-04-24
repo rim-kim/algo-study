@@ -1,4 +1,4 @@
-package chap03;
+package chap03_Search;
 import java.util.Scanner; //선형검색
 
 public class SeqSearch {

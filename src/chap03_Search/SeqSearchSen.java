@@ -1,4 +1,4 @@
-package chap03;
+package chap03_Search;
 import java.util.Scanner; // 선형검색 (보초법)
 
 public class SeqSearchSen {
@@ -13,7 +13,7 @@ public class SeqSearchSen {
                 break;
             i++;
         }
-        return i = n ? -1 : i;
+        return i == n ? -1 : i;
     }
 
     public static void main(String[] args) {
