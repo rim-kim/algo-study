@@ -25,6 +25,7 @@ bottom : 아랫부분
 
 from typing import Any
 
+
 # 고정 길이 스택 클래스
 class FixedStack:
 
