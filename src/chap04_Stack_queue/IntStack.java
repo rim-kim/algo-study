@@ -5,6 +5,10 @@ public class IntStack {
     private int ptr;    //스택 포인터
     private int[] stk;  //스택 본체
 
+    public IntStack() {
+
+    }
+
     // 실행 시 예외: 스택이 비어 있음
     public class EmptyIntStackException extends RuntimeException {
         public EmptyIntStackException() { }

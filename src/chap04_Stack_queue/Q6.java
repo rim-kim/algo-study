@@ -91,11 +91,12 @@ public class Q6<E> {
     }
 
     public void dump() {
-        if(num <= 0)
+        if (num <= 0)
             System.out.println("비어있습니다.");
-    } else {
-        for(int i=0; i < num; i++)
-            System.out.println(que[(i+front) %max].toString() + " ");
-        System.out.println();
+        else {
+            for (int i = 0; i < num; i++)
+                System.out.println(que[(i + front) % max].toString() + " ");
+            System.out.println();
+        }
     }
 }
